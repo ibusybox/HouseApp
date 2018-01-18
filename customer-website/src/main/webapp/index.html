@@ -162,7 +162,7 @@
         <div class="logo_products">
             <div class="container">
                 <div class="w3ls_logo_products_left">
-                    <h1><a ><span>HOUSE</span> Store</a></h1>
+                    <h1><a ><span>Car</span> Store</a></h1>
                 </div>
                 <!--<div class="w3ls_logo_products_left1">
                     <ul class="phone_email">
@@ -281,7 +281,7 @@
     <!-- top-brands -->
     <div class="top-brands">
         <div class="container">
-            <h3>热销楼盘</h3>
+            <h3>热销汽车</h3>
             <div class="agile_top_brands_grids" id="phoneList">
 
                     <div class="clearfix"> </div>
@@ -328,10 +328,10 @@
         <script src="js/minicart.js"></script>
         <script>
             var product2image = {
-                '0': "huxingtu1.jpg",
-                "1": "huxingtu2.jpg",
-                "2": "huxingtu3.jpg",
-                "3": "huxingtu4.jpg"
+                '0': "byd-tang.jpg",
+                "1": "byd-song.jpg",
+                "2": "byd-qin.jpg",
+                "3": "byd-s6.jpg"
             };
 
             var disabledBtn = {
@@ -346,7 +346,8 @@
                   formData.price = price;
                   $.ajax({
                     type: 'POST',
-                    url: "/api/customer-service/buy2pc",
+                    //url: "/api/customer-service/buy2pc",
+                    url: "/api/customer-service/buyWithoutTransaction",
                     data: formData,
                     success: function a(data) {
                         window.alert("抢购成功");
